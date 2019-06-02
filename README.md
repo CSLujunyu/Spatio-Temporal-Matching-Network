@@ -10,9 +10,9 @@ Files in this repository:
 
 * ```dataset``` folder: the dataset.
 * ```tmp``` folder: path to save log and models.
-* ```cache``` folder: path to save pre-processed data after running at the first time.
+* ```cache``` folder: path to save pre-processed data while running at the first time.
 * ```model.py``` folder: code of STM.
-* ```main.py```: entrance.
+* ```main.py```: code entrance.
 * ```processor.py```: code for processing the Ubunutu Corpus and the Advising Dataset that release by DSTC7 Track1.
 * ```STMDataLoader.py```: dataloader.
 
@@ -91,7 +91,7 @@ Files in this repository:
 1. Download the subtask1 dataset from  and put it into dataset/
 2. Train a model using default hyperparameters (Excuting at the first time may need a little time to prepare the data and save in ```cache/```).
 
-```python main.py --save_path 'tmp/' --encoder_type 'GRU' --pretrain_embedding glove.42B.300d.txt```
+  ```python main.py --save_path 'tmp/' --encoder_type 'GRU' --pretrain_embedding glove.42B.300d.txt```
 
 3. Evaluated results are saved to ```tmp/eval_result.txt``` and ```tmp/test_result.txt``` respectively.
 
