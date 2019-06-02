@@ -88,7 +88,7 @@ Files in this repository:
 ```
 
 ## Usage
-1. Download the subtask1 dataset from  and put it into dataset/
+1. Download the subtask1 dataset from the website and put it into dataset/
 2. Train a model using default hyperparameters (Excuting at the first time may need a little time to prepare the data and save in ```cache/```).
 
   ```python main.py --save_path 'tmp/' --encoder_type 'GRU' --pretrain_embedding glove.42B.300d.txt```
