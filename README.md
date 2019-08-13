@@ -2,9 +2,6 @@
 ## Overview
 Implementation of the model described in the ACL'19 short paper:
 - Interpretive Spatio-Temporal Features for Multi-TurnResponses Selection by Junyu Lu, Chenbin Zhang, Zeying Xie, Guang Ling, Chao Zhou, Zenglin Xu
-```
-(update soon)
-```
 
 Files in this repository:
 
@@ -96,3 +93,22 @@ Files in this repository:
 3. Evaluated results are saved to ```tmp/eval_result.txt``` and ```tmp/test_result.txt``` respectively.
 
 Note: You can change hyperparameters in ```main.py``` 
+
+## Citation
+```@inproceedings{lu-etal-2019-constructing,
+    title = "Constructing Interpretive Spatio-Temporal Features for Multi-Turn Responses Selection",
+    author = "Lu, Junyu  and
+      Zhang, Chenbin  and
+      Xie, Zeying  and
+      Ling, Guang  and
+      Zhou, Tom Chao  and
+      Xu, Zenglin",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1006",
+    pages = "44--50",
+    abstract = "Response selection plays an important role in fully automated dialogue systems. Given the dialogue context, the goal of response selection is to identify the best-matched next utterance (i.e., response) from multiple candidates. Despite the efforts of many previous useful models, this task remains challenging due to the huge semantic gap and also the large size of candidate set. To address these issues, we propose a Spatio-Temporal Matching network (STM) for response selection. In detail, soft alignment is first used to obtain the local relevance between the context and the response. And then, we construct spatio-temporal features by aggregating attention images in time dimension and make use of 3D convolution and pooling operations to extract matching information. Evaluation on two large-scale multi-turn response selection tasks has demonstrated that our proposed model significantly outperforms the state-of-the-art model. Particularly, visualization analysis shows that the spatio-temporal features enables matching information in segment pairs and time sequences, and have good interpretability for multi-turn text matching.",
+}```
